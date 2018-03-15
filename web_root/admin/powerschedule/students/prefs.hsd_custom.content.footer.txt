@@ -1,0 +1,12 @@
+
+<script>
+    $j(document).ready(function(){
+        $j('.linkDescList').prepend('<tr><td align="center" colspan="2" id="add"></td></tr>');
+        $j('.tabs').find('li').each(function(){
+            $this=this;
+	        $j('.linkDescList td#add').append($this.innerHTML+'|');
+        })
+        $j('.tabs').remove();
+    });
+    
+</script>
